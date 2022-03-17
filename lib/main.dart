@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
         title: 'Material App',
         initialRoute: AppRoutes.initialRoute,
         debugShowCheckedModeBanner: false,
-        routes: AppRoutes.routes,
+        routes: AppRoutes.getAppRoutes(),
         onGenerateRoute: AppRoutes.onGeneratedRoute);
   }
 }

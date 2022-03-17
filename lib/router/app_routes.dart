@@ -34,13 +34,24 @@ class AppRoutes {
         icon: Icons.card_membership),
   ];
 
-  static Map<String, Widget Function(BuildContext)> routes = {
-    'listview1': (BuildContext context) => const ListView1Screen(),
-    'listview2': (BuildContext context) => const ListView2Screen(),
-    'alert': (BuildContext context) => const AlertScreen(),
-    'card': (BuildContext context) => const CardScreen(),
-    'home': (BuildContext context) => const HomeScreen(),
-  };
+  static Map<String, Widget Function(BuildContext)> getAppRoutes() {
+    Map<String, Widget Function(BuildContext)> appRoutes = {};
+
+    for (final options in menuOptions) {
+      appRoutes
+          .addAll({options.route: (BuildContext context) => options.screen});
+    }
+
+    return appRoutes;
+  }
+
+  // static Map<String, Widget Function(BuildContext)> routes = {
+  //   'listview1': (BuildContext context) => const ListView1Screen(),
+  //   'listview2': (BuildContext context) => const ListView2Screen(),
+  //   'alert': (BuildContext context) => const AlertScreen(),
+  //   'card': (BuildContext context) => const CardScreen(),
+  //   'home': (BuildContext context) => const HomeScreen(),
+  // };
 
   static Route<dynamic> onGeneratedRoute(RouteSettings settings) {
     return MaterialPageRoute(builder: (context) => const AlertScreen());
