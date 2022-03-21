@@ -17,7 +17,27 @@ class CardScreen extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
-            CustomCardType2(),
+            CustomCardType2(
+              imageDesc: 'Un Hermoso Paisaje',
+              imageUrl: 'https://wallpaperaccess.com/full/1289981.jpg',
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            CustomCardType2(
+              imageUrl:
+                  'https://mymodernmet.com/wp/wp-content/uploads/2020/02/Landscape-Photographer-of-the-Year-Yang-Guang-1.jpg',
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            CustomCardType2(
+              imageUrl:
+                  'https://mymodernmet.com/wp/wp-content/uploads/2020/02/Landscape-Photographer-of-the-Year-Sander-Grefte.jpg',
+            ),
+            SizedBox(
+              height: 100,
+            ),
           ],
         ));
   }
