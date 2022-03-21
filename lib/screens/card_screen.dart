@@ -19,7 +19,8 @@ class CardScreen extends StatelessWidget {
             ),
             CustomCardType2(
               imageDesc: 'Un Hermoso Paisaje',
-              imageUrl: 'https://wallpaperaccess.com/full/1289981.jpg',
+              imageUrl:
+                  'https://astelus.com/wp-content/viajes/Lago-Moraine-Parque-Nacional-Banff-Alberta-Canada.jpg',
             ),
             SizedBox(
               height: 20,
